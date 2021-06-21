@@ -1,0 +1,72 @@
+site_name: Perditio's Guide to Japanese
+site_url: https://Perdit-io.github.io/cuddly-eureka/
+site_description: Immerse More (･ω<)☆
+site_author: Someone
+copyright: © 2021 Perditio's Community
+theme:
+    name: material
+    custom_dir: overrides
+    logo: './img/sIcon-Final.png'
+    favicon: './img/favicon.ico'
+    features:
+        - navigation.expand
+        - navigation.instant
+        - navigation.sections
+        - navigation.top
+    palette:
+          - media: "(prefers-color-scheme: light)"
+            scheme: slate
+            primary: grey
+            accent: deep orange
+            toggle:
+              icon: material/toggle-switch
+              name: Switch to light mode
+          - media: "(prefers-color-scheme: light)"
+            scheme: default
+            primary: deep purple
+            accent: light blue
+            toggle:
+              icon: material/toggle-switch-off-outline
+              name: Switch to dark mode
+nav:
+    - Home: index.md
+    - Miscellaneous:
+        - Resources: res.md
+        - Index by Tags: tags.md
+        - Credits: credits.md
+    - about.md   
+markdown_extensions:
+    smarty: {}
+    toc:
+        permalink: "&#xf0c1;"
+        baselevel: 2
+        separator: "_"
+    sane_lists: {}
+    admonition: {}
+    footnotes: {}
+    pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+extra:
+  alternate:
+    # Switch to English
+    - name: English
+      link: https://Perdit-io.github.io/cuddly-eureka//en/
+      lang: en
+
+    # Switch to Japanese
+    - name: 日本語
+      link: https://Perdit-io.github.io/cuddly-eureka//ja/
+      lang: ja
+extra_css:
+  - cjs/stylesheets/style.css
+markdown_extensions:
+  - attr_list
+  - meta
+plugins:
+  - awesome-pages
+  - search:
+      min_search_length: 3
+  - simple-tags:
+      tags_folder: docs
+  
