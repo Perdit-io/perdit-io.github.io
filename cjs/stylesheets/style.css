@@ -114,6 +114,7 @@
   fill:var(--color-accent-light);
   filter: brightness(110%);
 }
+
 .progress-label {
   position: absolute;
   text-align: center;
@@ -136,9 +137,16 @@
   width: 100%;
   margin: 0.5rem 0;
   height: 1.2rem;
-  background-color: #eeeeee;
   position: relative;
 }
+
+[data-md-color-scheme=slate] .progress{
+  background-color: #757575;
+}
+[data-md-color-scheme=default] .progress{
+  background-color: #eeeeee;
+}
+
 
 .progress.thin {
   margin-top: 0.9rem;
@@ -175,4 +183,26 @@
 
 .progress-0plus .progress-bar {
   background-color: #f50057;
+}
+
+details {
+  display: block;
+}
+
+details[open] > summary::before {
+  content: "\25BC";
+}
+
+details summary {
+  display: block;
+  cursor: pointer;
+}
+
+details summary:focus {
+  outline: none;
+}
+
+details summary::before {
+  content: "\25B6";
+  padding-right: 0.5em;
 }
