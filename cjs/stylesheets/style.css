@@ -1,11 +1,50 @@
 :root{
   --color-accent-dark: rgb(117 117 117);
   --color-accent-light: #7e56c2;
+  --md-admonition-icon--mc: url('https://perdit-io.github.io/cuddly-eureka/img/sIcon.svg');
 }
-.md-typeset ul li,.md-typeset ol li{
+
+[data-md-color-scheme=slate] .md-typeset .admonition.mc,
+.md-typeset details.mc {
+  border-color: rgb(117 117 117);
+}
+[data-md-color-scheme=slate] .md-typeset .mc > .admonition-title,
+[data-md-color-scheme=slate] .md-typeset .mc > summary {
+  background-color: rgb(87 87 87);
+  border-color: rgb(117 117 117)
+}
+[data-md-color-scheme=slate] .md-typeset .mc > .admonition-title::before,
+[data-md-color-scheme=slate] .md-typeset .mc > summary::before {
+  background-color: rgb(211 211 211);
+  -webkit-mask-image: var(--md-admonition-icon--mc);
+          mask-image: var(--md-admonition-icon--mc);
+}
+[data-md-color-scheme=default] .md-typeset ul li,.md-typeset ol li{
   margin-bottom:0
 }
+
+[data-md-color-scheme=default] .md-typeset .admonition.mc,
+.md-typeset details.mc {
+  border-color: rgb(126 86 194 / 74%)
+}
+[data-md-color-scheme=default] .md-typeset .mc > .admonition-title,
+[data-md-color-scheme=default] .md-typeset .mc > summary {
+  background-color: rgb(126 86 194 / 39%);
+  border-color: rgb(117 117 117)
+}
+[data-md-color-scheme=default] .md-typeset .mc > .admonition-title::before,
+[data-md-color-scheme=default] .md-typeset .mc > summary::before {
+  background-color: rgb(0 0 0);
+  -webkit-mask-image: var(--md-admonition-icon--mc);
+          mask-image: var(--md-admonition-icon--mc);
+}
+[data-md-color-scheme=default] .md-typeset ul li,.md-typeset ol li{
+  margin-bottom:0
+}
+
 [data-md-color-scheme=slate]{
+  /*background-image: url('https://perdit-io.github.io/cuddly-eureka/img/sIcon.svg');
+  background-repeat: no-repeat;*/
   --md-default-fg-color:        rgba(255, 255, 255, 0.60);
   --md-default-fg-color--light: rgba(255, 255, 255, 0.38);
   --md-default-bg-color:        rgb(44 44 47);
@@ -35,6 +74,9 @@
 }
 
 [data-md-color-scheme=default] {
+  /*background-color: #ecf3ff;
+  background-image: url('https://perdit-io.github.io/cuddly-eureka/img/sIcon.svg');
+  background-repeat: no-repeat;*/
   --md-typeset-kbd-border-color: #7e56c2;
 }
 
