@@ -206,3 +206,14 @@ details summary::before {
   content: "\25B6";
   padding-right: 0.5em;
 }
+
+[data-md-color-scheme=default] th {
+  background-color: #7e56c2 !important;
+  border-bottom: 2px solid #1f1e1e;
+}
+
+[data-md-color-scheme=slate] th {
+  background-color: #757575 !important;
+  border-bottom: 2px solid #b1adad;
+}
+
