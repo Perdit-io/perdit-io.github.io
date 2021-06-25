@@ -1,7 +1,7 @@
 :root{
   --color-accent-dark: rgb(117 117 117);
   --color-accent-light: #7e56c2;
-  --md-admonition-icon--mc: url('https://perdit-io.github.io/cuddly-eureka/img/sIcon.svg');
+  --md-admonition-icon--mc: url('https://raw.githubusercontent.com/Perdit-io/cuddly-eureka/10dcd7f733db392716df9665ef69eca0182095e0/img/sIcon.svg');
 }
 
 [data-md-color-scheme=slate] .md-typeset .admonition.mc,
