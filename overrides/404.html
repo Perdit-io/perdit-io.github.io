@@ -1,0 +1,44 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% extends "main.html" %}
+{% block content %}
+<script>
+const node = document.getElementsByClassName('md-main__inner md-grid')[0];
+const content = document.getElementsByClassName('md-content')[0];
+node.replaceWith(...node.childNodes);
+content.replaceWith(...content.childNodes);
+</script>
+<style>
+	* {
+		margin: 0;
+
+	}
+	.flexbox {
+		text-align: center;
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+	}
+	.okay {
+		width: auto;
+		min-width: auto; 
+	}
+	.md-sidebar--primary, .md-nav--primary {
+		display: none;
+	}
+</style>
+
+<div class="flexbox">
+	<div style="text-align:center">
+		<h1>Hey, Go back to where you came from!</h1>
+		<img class="okay" src="https://perdit-io.github.io/cuddly-eureka/img/bonk.gif" alt="(`皿´＃)" title="	(`皿´＃)" style="max-width:256px; max-height:256px; border-radius: 90px;"><br>
+		<a class="okay md-button md-button--primary" style="border-radius:15px; vertical-align:'middle'; display:'inline-block'" href='../'>
+			<span class="twemoji" style="align-items: center;">
+				{% include ".icons/material/home" ~ ".svg" %}	HOME
+			</span>
+		</a>
+	</div>
+</div>
+{% endblock %}
+{% block disqus %}{% endblock %}

@@ -1,0 +1,261 @@
+:root{
+  --color-accent-dark: rgb(117 117 117);
+  --color-accent-light: #7e56c2;
+  --md-admonition-icon--mc: url('https://raw.githubusercontent.com/Perdit-io/cuddly-eureka/10dcd7f733db392716df9665ef69eca0182095e0/img/sIcon.svg');
+}
+
+[data-md-color-scheme=slate] .md-typeset .admonition.mc,
+.md-typeset details.mc {
+  border-color: rgb(117 117 117);
+}
+[data-md-color-scheme=slate] .md-typeset .mc > .admonition-title,
+[data-md-color-scheme=slate] .md-typeset .mc > summary {
+  background-color: rgb(87 87 87);
+  border-color: rgb(117 117 117)
+}
+[data-md-color-scheme=slate] .md-typeset .mc > .admonition-title::before,
+[data-md-color-scheme=slate] .md-typeset .mc > summary::before {
+  background-color: rgb(211 211 211);
+  -webkit-mask-image: var(--md-admonition-icon--mc);
+          mask-image: var(--md-admonition-icon--mc);
+}
+[data-md-color-scheme=default] .md-typeset ul li,.md-typeset ol li{
+  margin-bottom:0
+}
+
+[data-md-color-scheme=default] .md-typeset .admonition.mc,
+.md-typeset details.mc {
+  border-color: rgb(126 86 194 / 74%)
+}
+[data-md-color-scheme=default] .md-typeset .mc > .admonition-title,
+[data-md-color-scheme=default] .md-typeset .mc > summary {
+  background-color: rgb(126 86 194 / 39%);
+  border-color: rgb(117 117 117)
+}
+[data-md-color-scheme=default] .md-typeset .mc > .admonition-title::before,
+[data-md-color-scheme=default] .md-typeset .mc > summary::before {
+  background-color: rgb(0 0 0);
+  -webkit-mask-image: var(--md-admonition-icon--mc);
+          mask-image: var(--md-admonition-icon--mc);
+}
+[data-md-color-scheme=default] .md-typeset ul li,.md-typeset ol li{
+  margin-bottom:0
+}
+
+[data-md-color-scheme=slate]{
+  /*background-image: url('https://perdit-io.github.io/cuddly-eureka/img/sIcon.svg');
+  background-repeat: no-repeat;*/
+  --md-default-fg-color:        rgba(255, 255, 255, 0.60);
+  --md-default-fg-color--light: rgba(255, 255, 255, 0.38);
+  --md-default-bg-color:        rgb(44 44 47);
+  --md-typeset-a-color:         #d9d3d3;
+  --md-code-fg-color:           rgba(255, 255, 255, 0.60);
+  --md-code-bg-color:           rgba(000, 000, 000, 0.38);
+}
+.md-nav__link--active{
+  font-weight:400;
+}
+[data-md-color-scheme=slate] strong,[data-md-color-scheme=slate] .md-nav__title,[data-md-color-scheme=slate] h2,[data-md-color-scheme=slate] h3,[data-md-color-scheme=slate] h4{
+  color:rgba(255,255,255,.87)
+}
+[data-md-color-scheme=slate] h1 {
+  color: rgba(255,255,255,.87)
+} 
+[data-md-color-scheme=slate] .md-typeset kbd {
+  box-shadow:0  .1rem 0 .05rem hsl(0deg 0% 46%) , 0 .1rem 0 hsl(0deg 0% 0%),0 -.1rem .2rem #2c2c2f inset;
+  font-size:.78em;
+  color:#d4d4d4
+}
+
+[data-md-color-scheme=default] .md-typeset kbd {
+  box-shadow:0  .1rem 0 .05rem hsl(262deg 15% 30%) , 0 .1rem 0 hsl(218deg 100% 96%),0 -.1rem .2rem #dbd1de inset;
+  font-size:.78em;
+  color:#000000
+}
+
+[data-md-color-scheme=default] {
+  /*background-color: #ecf3ff;
+  background-image: url('https://perdit-io.github.io/cuddly-eureka/img/sIcon.svg');
+  background-repeat: no-repeat;*/
+  --md-typeset-kbd-border-color: #7e56c2;
+}
+
+.md-typeset kbd{
+  font-size:.78em;
+}
+
+[data-md-color-scheme=default] .md-typeset blockquote{
+  border-left:.2rem solid hsl(262deg 96% 71%);
+}
+
+[data-md-color-scheme=slate] .md-typeset blockquote{
+  border-left:.2rem solid hsl(262 47%);
+} 
+
+[data-md-color-scheme=slate] .md-tag{
+  display:inline-block;
+  margin:.45rem 0;
+  padding-right: .5rem;
+  border-radius:.2rem;
+  background-color:#757575;
+  font-size:.64rem;
+  list-style-type:none;
+  cursor:pointer;
+  overflow:hidden;
+  color:#fff !important;
+}
+[data-md-color-scheme=slate] .md-tag svg{
+  display:inline-block;
+  margin-right:.25rem;
+  padding:.1rem .4rem;
+  width:38px;
+  height:38px;
+  background-color:#ffffff45;
+  vertical-align:middle;
+  fill:rgba(255,255,255,.7);
+}
+[data-md-color-scheme=slate] .md-tag:hover{
+  filter: brightness(50%);
+  box-shadow:0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36);
+}
+
+[data-md-color-scheme=slate] .md-tag:hover svg{
+  fill:var(--color-accent-dark);
+  filter: brightness(90%);
+}
+
+[data-md-color-scheme=default] .md-tag{
+  display:inline-block;
+  margin:.45rem 0;
+  padding-right: .5rem;
+  border-radius:.2rem;
+  background-color:#7e56c2;
+  font-size:.64rem;
+  list-style-type:none;
+  cursor:pointer;
+  overflow:hidden;
+  color:#fff !important;
+}
+[data-md-color-scheme=default] .md-tag svg{
+  display:inline-block;
+  margin-right:.25rem;
+  padding:.1rem .4rem;
+  width:38px;
+  height:38px;
+  background-color:#ac9acc;
+  vertical-align:middle;
+  fill:rgba(255,255,255,.7);
+}
+
+[data-md-color-scheme=default] .md-tag:hover{
+  filter: brightness(120%);
+  box-shadow:0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36);
+}
+
+[data-md-color-scheme=default] .md-tag:hover svg{
+  fill:var(--color-accent-light);
+  filter: brightness(110%);
+}
+
+.progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  margin: 0;
+  line-height: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 1.2rem;
+  float: left;
+  background-color: #2979ff;
+}
+
+.progress {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  height: 1.2rem;
+  position: relative;
+}
+
+[data-md-color-scheme=slate] .progress{
+  background-color: #757575;
+}
+[data-md-color-scheme=default] .progress{
+  background-color: #eeeeee;
+}
+
+
+.progress.thin {
+  margin-top: 0.9rem;
+  height: 0.4rem;
+}
+
+.progress.thin .progress-label {
+  margin-top: -0.4rem;
+}
+
+.progress.thin .progress-bar {
+  height: 0.4rem;
+}
+
+.progress-100plus .progress-bar {
+  background-color: #00e676;
+}
+
+.progress-80plus .progress-bar {
+  background-color: #fbc02d;
+}
+
+.progress-60plus .progress-bar {
+  background-color: #ff9100;
+}
+
+.progress-40plus .progress-bar {
+  background-color: #ff5252;
+}
+
+.progress-20plus .progress-bar {
+  background-color: #ff1744;
+}
+
+.progress-0plus .progress-bar {
+  background-color: #f50057;
+}
+
+details {
+  display: block;
+}
+
+details[open] > summary::before {
+  content: "";
+}
+
+details summary {
+  display: block;
+  cursor: pointer;
+}
+
+details summary:focus {
+  outline: none;
+}
+
+details summary::before {
+  content: "";
+  padding-right: 0.5em;
+}
+
+[data-md-color-scheme=default] th {
+  background-color: #7e56c2 !important;
+  border-bottom: 2px solid #1f1e1e;
+}
+
+[data-md-color-scheme=slate] th {
+  background-color: #757575 !important;
+  border-bottom: 2px solid #b1adad;
+}
+
