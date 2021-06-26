@@ -4,7 +4,6 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: staging
 
@@ -15,15 +14,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Setup Python
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs
-      - run: pip install mkdocs-material 
-      - run: pip install git+https://github.com/taivo/mkdocs-simple-tags.git
-      - run: pip install mkdocs-redirects
-      - run: pip install mkdocs-awesome-pages-plugin
-      - run: mkdocs gh-deploy --force
+      - name: Install Python Package
+        run: | 
+          pip install mkdocs
+          pip install mkdocs-material 
+          pip install git+https://github.com/taivo/mkdocs-simple-tags.git
+          pip install mkdocs-redirects
+          pip install mkdocs-awesome-pages-plugin
+          mkdocs gh-deploy --force
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v1.1.0
         with:
