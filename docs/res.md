@@ -1,7 +1,9 @@
 ---
 title: Resources
-hide:
+hide: 
 	- tags
-
 ---
+
 # Resources
+----
+Resources is still being compiled and sorted

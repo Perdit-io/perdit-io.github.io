@@ -31,42 +31,70 @@ theme:
 nav:
     - Home: index.md
     - Miscellaneous:
-        - Resources: res.md
-        - Index by Tags: tags.md
-        - Credits: credits.md
+      - Resources: misc/res.md
+      - Credits: misc/credits.md
+      - Index by Tags: tags.md
     - about.md   
 markdown_extensions:
-    smarty: {}
-    toc:
-        permalink: "&#xf0c1;"
-        baselevel: 2
-        separator: "_"
-    sane_lists: {}
-    admonition: {}
-    footnotes: {}
-    pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
+  - meta
+  - toc:
+      permalink: true
+      separator: "_"
+  - smarty
+  - sane_lists
+  - admonition
+  - footnotes
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.keys:
+      separator: "\uff0b"
+      key_map: {"s": "S"}
+  - pymdownx.tilde
+  - pymdownx.tasklist
+  - pymdownx.progressbar
+  - pymdownx.tabbed
+  - pymdownx.details
 extra:
   alternate:
-    # Switch to English
     - name: English
-      link: https://Perdit-io.github.io/cuddly-eureka//en/
+      link: https://perdit-io.github.io/cuddly-eureka/
       lang: en
-
-    # Switch to Japanese
     - name: 日本語
-      link: https://Perdit-io.github.io/cuddly-eureka//ja/
+      link: https://perdit-io.github.io/cuddly-eureka/ja/
       lang: ja
 extra_css:
   - cjs/stylesheets/style.css
-markdown_extensions:
-  - attr_list
-  - meta
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - cjs/javascripts/script.js
+  - cjs/javascripts/translate.js
 plugins:
-  - awesome-pages
-  - search:
-      min_search_length: 3
+  - search
+  - awesome-pages:
+        collapse_single_pages: true
+  - i18n:
+      default_language: en
+      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, false]
+      languages:
+        ja: 日本語
+      nav_translations:
+        ja:
+          Home: ホーム
+          Misc: その他
+          Resources: 資源
+          Credits: クレジット
+          Index by Tags: タグ別インデックス
+          About: このサイトについて
   - simple-tags:
       tags_folder: docs
-  
+      tags_template: docs/tags.md.template
+  - redirects:
+      redirect_maps:
+        'egg.md': 'https://e.gg/'
+        'en.md': 'index.md'
+        'en/misc/res.md': 'https://perdit-io.github.io/cuddly-eureka/misc/res/'
+        'en/misc/credits.md': 'https://perdit-io.github.io/cuddly-eureka/misc/credits/'
+        'en/about.md': 'https://perdit-io.github.io/cuddly-eureka/about/'
+        'en/tags.md': 'https://perdit-io.github.io/cuddly-eureka/tags/'
