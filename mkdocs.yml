@@ -93,6 +93,7 @@ plugins:
   - redirects:
       redirect_maps:
         'egg.md': 'https://e.gg/'
+        'easter.md': 'egg.md'
         'en.md': 'index.md'
         'en/misc/res.md': 'https://perdit-io.github.io/cuddly-eureka/misc/res/'
         'en/misc/credits.md': 'https://perdit-io.github.io/cuddly-eureka/misc/credits/'
