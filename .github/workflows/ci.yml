@@ -20,6 +20,7 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install \
+              mkdocs-static-i18n \
               mkdocs-material \
               mkdocs-awesome-pages-plugin \
               git+https://github.com/taivo/mkdocs-simple-tags.git \ 
