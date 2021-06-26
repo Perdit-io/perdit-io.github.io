@@ -18,11 +18,11 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install \
-          mkdocs \
-          mkdocs-material \
-          mkdocs-awesome-pages-plugin \
-          git+https://github.com/taivo/mkdocs-simple-tags.git \ 
-          mkdocs-redirects \
+              mkdocs \
+              mkdocs-material \
+              mkdocs-awesome-pages-plugin \
+              git+https://github.com/taivo/mkdocs-simple-tags.git \ 
+              mkdocs-redirects \
       - run: mkdocs gh-deploy --force
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v1.1.0
