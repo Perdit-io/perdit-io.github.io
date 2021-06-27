@@ -166,6 +166,7 @@
   line-height: 1.2rem;
   white-space: nowrap;
   overflow: hidden;
+  user-select: none;
 }
 
 .progress-bar {
