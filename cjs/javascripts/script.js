@@ -3,6 +3,13 @@
 /* eslint-disable no-shadow */
 /* Credit from ManticoreGamesInc (Stanzilla)*/
 // Manticore JavaScript Helpers
+
+window.onscroll = function() {
+    var pageOffset = document.documentElement.scrollTop || document.body.scrollTop,
+        btn = document.getElementById('noH');
+    if (btn) btn.style.visibility = pageOffset > 450 ? 'visible' : 'hidden';
+};
+
 document$.subscribe(function() {
   var tables = document.querySelectorAll("article table")
   tables.forEach(function(table) {
@@ -14,13 +21,6 @@ document$.subscribe(function() {
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-shadow */
 /* Credit from ManticoreGamesInc (Stanzilla)*/
-// Manticore JavaScript Helpers
-document$.subscribe(function() {
-  var tables = document.querySelectorAll("article table")
-  tables.forEach(function(table) {
-    new Tablesort(table)
-  })
-})
 
 document.addEventListener("DOMContentLoaded", event => {
 
