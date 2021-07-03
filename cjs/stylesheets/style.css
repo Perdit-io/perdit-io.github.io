@@ -82,6 +82,9 @@
   }
 
 /*** Global Styling ***/
+summary,
+.admonition-title { user-select:none; }
+
 .md-button { color: #fff !important; }
 
 #noH { visibility: hidden; }
