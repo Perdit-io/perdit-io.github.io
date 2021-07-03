@@ -691,7 +691,7 @@ details summary::before {
   transition: all 0.3s ease 0.1s;
 }
 
-[data-md-color-scheme=dark] .progress{ background-color: var(--md-default-bg-color--dark; }
+[data-md-color-scheme=dark] .progress{ background-color: var(--md-default-bg-color--dark) }
 
 [data-md-color-scheme=dark] th {
   background-color: var(--md-default-bg-color--dark) !important;
