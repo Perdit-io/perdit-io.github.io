@@ -82,6 +82,9 @@
   }
 
 /*** Global Styling ***/
+svg .md-button-icon .md-button {
+  transform: scale(4);
+}
 summary,
 .admonition-title { user-select:none; }
 
@@ -114,7 +117,8 @@ summary,
 }
 
 .md-tag:before,
-.md-button:before {
+.md-button:before,
+.headerlink:before {
   content: "";
   visibility: hidden !important;
 }
@@ -650,7 +654,7 @@ details summary::before {
 }
 
 [data-md-color-scheme=dark] .md-typeset blockquote{
-    border-left:.2rem solid hsla(262, 47%);
+    border-left:.2rem solid var(--md-default-bg-color--light);
 } 
 
 [data-md-color-scheme=dark] .md-tag{
@@ -967,10 +971,6 @@ details summary::before {
   font-size:.78em;
   color: var(--md-text-color);
 }
-
-[data-md-color-scheme=light] .md-typeset blockquote{
-    border-left:.2rem solid hsla(262, 47%);
-} 
 
 [data-md-color-scheme=light] .md-tag{
     display:inline-block;
