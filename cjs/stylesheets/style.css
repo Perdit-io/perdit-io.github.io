@@ -82,6 +82,75 @@
   }
 
 /*** Global Styling ***/
+.tabbed-set {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.tabbed-set .highlight {
+  background: #ddd;
+}
+
+.tabbed-set .tabbed-content {
+  display: none;
+  order: 99;
+  width: 100%;
+}
+
+.tabbed-set label {
+  width: auto;
+  margin: 0 0.5em;
+  padding: 0.25em;
+  font-size: 120%;
+  cursor: pointer;
+}
+
+.tabbed-set input {
+  position: absolute;
+  opacity: 0;
+}
+
+.tabbed-set input:nth-child(n+1) {
+  color: #333333;
+}
+
+.tabbed-set input:nth-child(n+1):checked + label {
+  color: var(--md-accent-fg-color)
+}
+
+.tabbed-set input:nth-child(n+1):checked + label + .tabbed-content {
+    display: block;
+}
+
+.md-typeset .tabbed-set > .tabbed-content {
+  padding: 0 0.6rem;
+  overflow: hidden; }
+
+.md-typeset .tabbed-set > input:checked + label + .tabbed-content > pre:only-child code,
+.md-typeset .tabbed-set > input:checked + label + .tabbed-content > .codehilite:only-child code,
+.md-typeset .tabbed-set > input:checked + label + .tabbed-content > .codehilitetable:only-child code,
+.md-typeset .tabbed-set > input:checked + label + .tabbed-content > .highlight:only-child code,
+.md-typeset .tabbed-set > input:checked + label + .tabbed-content > .highlighttable:only-child code {
+  margin-right: -0.6rem;
+  margin-left: -0.6rem;
+  padding-right: 0.6rem;
+  padding-left: 0.6rem; }
+  .md-typeset .tabbed-set > input:checked + label + .tabbed-content > pre:only-child code .hll,
+  .md-typeset .tabbed-set > input:checked + label + .tabbed-content > .codehilite:only-child code .hll,
+  .md-typeset .tabbed-set > input:checked + label + .tabbed-content > .codehilitetable:only-child code .hll,
+  .md-typeset .tabbed-set > input:checked + label + .tabbed-content > .highlight:only-child code .hll,
+  .md-typeset .tabbed-set > input:checked + label + .tabbed-content > .highlighttable:only-child code .hll {
+    margin: 0 -0.6rem;
+    padding: 0 0.6rem; }
+
+.md-typeset .tabbed-set > input:checked + label + .tabbed-content > mermaid-div {
+  margin-right: -0.6rem;
+  margin-left: -0.6rem;
+  padding-right: 0.6rem;
+  padding-left: 0.6rem; 
+}
+
 svg .md-button-icon .md-button {
   transform: scale(4);
 }
