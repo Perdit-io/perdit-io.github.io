@@ -163,8 +163,6 @@ svg .md-button-icon .md-button {
 summary,
 .admonition-title { user-select:none; }
 
-.md-button { color: #fff !important; }
-
 #noH { visibility: hidden; }
 
 .md-content a  { 
@@ -772,6 +770,8 @@ details summary::before {
 [data-md-color-scheme=dark] .md-tag:hover{
   transition: all 0.3s ease 0.1s;
 }
+
+[data-md-color-scheme=dark] .md-button { color: #fff !important; }
 
 [data-md-color-scheme=dark] .progress{ background-color: var(--md-default-bg-color--dark) }
 
