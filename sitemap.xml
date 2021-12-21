@@ -1,48 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://Perdit-io.github.io/cuddly-eureka/</loc>
-         <lastmod>2021-07-05</lastmod>
+         <loc>https://Perdit-io.github.io/</loc>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Perdit-io.github.io/cuddly-eureka/about/</loc>
-         <lastmod>2021-07-05</lastmod>
+         <loc>https://Perdit-io.github.io/about/</loc>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Perdit-io.github.io/cuddly-eureka/contribute/</loc>
-         <lastmod>2021-07-05</lastmod>
+         <loc>https://Perdit-io.github.io/contribute/</loc>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Perdit-io.github.io/cuddly-eureka/egg/</loc>
-         <lastmod>2021-07-05</lastmod>
+         <loc>https://Perdit-io.github.io/egg/</loc>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Perdit-io.github.io/cuddly-eureka/en/</loc>
-         <lastmod>2021-07-05</lastmod>
+         <loc>https://Perdit-io.github.io/en/</loc>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Perdit-io.github.io/cuddly-eureka/tags/</loc>
-         <lastmod>2021-07-05</lastmod>
+         <loc>https://Perdit-io.github.io/home/</loc>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Perdit-io.github.io/cuddly-eureka/misc/credits/</loc>
-         <lastmod>2021-07-05</lastmod>
+         <loc>https://Perdit-io.github.io/tags/</loc>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Perdit-io.github.io/cuddly-eureka/misc/res/</loc>
-         <lastmod>2021-07-05</lastmod>
+         <loc>https://Perdit-io.github.io/misc/credits/</loc>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Perdit-io.github.io/cuddly-eureka/tags/</loc>
-         <lastmod>2021-07-05</lastmod>
+         <loc>https://Perdit-io.github.io/misc/res/</loc>
+         <lastmod>2021-12-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Perdit-io.github.io/stage1/introduction/</loc>
+         <lastmod>2021-12-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Perdit-io.github.io/stage2/introduction/</loc>
+         <lastmod>2021-12-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Perdit-io.github.io/stage3/introduction/</loc>
+         <lastmod>2021-12-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Perdit-io.github.io/tags/</loc>
+         <lastmod>2021-12-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
